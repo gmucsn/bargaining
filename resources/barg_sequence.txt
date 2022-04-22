@@ -1,0 +1,14 @@
+Environment -> Environment: [env_end_period] in t seconds
+Environment -> Institution: [init_institution]
+Institution -> Environment: [institution_confirm_init]
+Environment -> Agent: [init_agents]
+Agent -> Environment: [agent_confirm_init]
+Environment -> Institution: [start_bargaining]
+Institution -> Environment: [contract]
+Institution -> Agent: [start_round]
+Agent -> Institution: [request-_standing]
+Institution -> Agent: [standing]
+Agent -> Institution: [bid]
+Agent -> Institution: [ask]
+Agent -> Agent: [make_offer] in s seconds
+
