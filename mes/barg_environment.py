@@ -153,6 +153,7 @@ class BargEnvironment(Environment):
         Receives reminder to end_period. Sends end_bargaining to Institution
         """
         self.log_message(".... <E> ... Ending Bargaining")
+        self.log_data("no contract")
         self.send_message("end_bargaining", 
                         "barg_institution.BargInstitution 1",
                          None)

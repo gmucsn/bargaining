@@ -77,9 +77,9 @@ class BargInstitution(Institution):
         self.environment_address = message.get_sender() #saves the environment address 
         init_dict = message.get_payload()
         self.standing_bid = init_dict['starting_bid']
-        self.standing_bid_id = None
+        self.standing_bid_id = "INIT"
         self.standing_ask = init_dict['starting_ask']
-        self.standing_ask_id = None
+        self.standing_ask_id = "INIT"
 
         self.send_message("institution_confirm_init", "Environment", None, True)
   
@@ -165,7 +165,6 @@ class BargInstitution(Institution):
     def ask(self, message: Message):
         """
         Sends the standing_ask to agents.
-        #TODO: convert standing_bid processing to standing_ask
         Messages Handled :
         - ask
             sender: Agent 
@@ -186,7 +185,7 @@ class BargInstitution(Institution):
 
         if self.agent_ask <= self.standing_bid:
             self.barg_open = False
-            contract = (self.agent_bid_id, self.agent_id, self.standing_bid)
+            contract = (self.standing_bid_id, self.agent_id, self.standing_bid)
             self.log_data(f"contract = {contract}")
             self.send_message("contract", "Environment", contract, True)
             #self.shutdown_mes() #Used for testing
