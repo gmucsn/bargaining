@@ -40,7 +40,7 @@ class BargEnvironment(Environment):
 
     def __init__(self):
         self.state = {}
-        self.num_agents_responded = None  
+        self.num_agents_responded = None
 
     def send_message(self, directive, receiver, payload):
         """Sends message"""
@@ -61,7 +61,25 @@ class BargEnvironment(Environment):
         reminder_msg.set_directive(directive)
         self.reminder(seconds_to_reminder = seconds_to_reminder,
                       message = reminder_msg)
-      
+
+    def load_environment_state(self):
+        """Loads the environment state from the config file"""
+
+        # agent related
+        self.state['endowment'] = int(self.get_property("endowment"))
+        self.state['value'] = int(self.get_property("value"))
+        self.state['cost'] = int(self.get_property("cost"))
+       
+        # Institution related
+        self.state['starting_bid'] = int(self.get_property("starting_bid"))
+        self.state['starting_ask'] = int(self.get_property("starting_ask"))
+
+        # Environment related
+        self.state['period_length'] = int(self.get_property("period_length"))
+        self.state['number_of_agents'] = int(self.get_property("number_of_agents"))
+        self.state['contract'] = None
+   
+
     @directive_decorator("start_environment")
     def start_environment(self, message: Message):
         """
@@ -71,6 +89,9 @@ class BargEnvironment(Environment):
         Messages Handled :
         - start_environment
             sender: None 
+
+        """
+        self.load_environment_state()
 
         """
         # Agent related
@@ -86,6 +107,7 @@ class BargEnvironment(Environment):
         self.state['period_length'] = int(self.get_property("period_length"))
         self.state['number_of_agents'] = int(self.get_property("number_of_agents"))
         self.state['contract'] = None
+        """
 
         self.set_reminder("env_end_period", self.state['period_length'])
 
