@@ -33,14 +33,12 @@ class BargEnvironment(Environment):
     - start_bargaining, payload = None
     - end_bargaining, payload = None
     - contract, payload = contract, keys: 'buyer_id', 'seller_id', 'price'
-
-
-
     """
 
     def __init__(self):
         self.state = {}
         self.num_agents_responded = None
+
 
     def send_message(self, directive, receiver, payload):
         """Sends message"""
@@ -54,6 +52,7 @@ class BargEnvironment(Environment):
             {"short_name": receiver})
         self.send(receiver_address, new_message)
 
+    
     def set_reminder(self, directive, seconds_to_reminder):
         """Sets a reminder to send a message"""
         reminder_msg = Message()
@@ -92,23 +91,6 @@ class BargEnvironment(Environment):
 
         """
         self.load_environment_state()
-
-        """
-        # Agent related
-        self.state['endowment'] = int(self.get_property("endowment"))
-        self.state['value'] = int(self.get_property("value"))
-        self.state['cost'] = int(self.get_property("cost"))
-       
-        # Institution related
-        self.state['starting_bid'] = int(self.get_property("starting_bid"))
-        self.state['starting_ask'] = int(self.get_property("starting_ask"))
-
-        # Environment related
-        self.state['period_length'] = int(self.get_property("period_length"))
-        self.state['number_of_agents'] = int(self.get_property("number_of_agents"))
-        self.state['contract'] = None
-        """
-
         self.set_reminder("env_end_period", self.state['period_length'])
 
         institution_payload = {'starting_bid': self.state['starting_bid'],
@@ -122,31 +104,39 @@ class BargEnvironment(Environment):
     @directive_decorator("institution_confirm_init")
     def institution_confirm_init(self, message: Message):
         """
-        Receives confirmation from the institution that its finished initializing. 
+        Receives confirmation from the institution that its finished initializing. Sends the agents their information.
         """
 
         # Initialize counter
         self.num_agents_responded = 0
 
         # send agent roles and value/cost information
-        agent_payload = {"id": 1, "role": "Buyer", 
-                         "value": self.state['value'],}
-        self.send_message("init_agent", "barg_agent.BargAgent 1",
-                           agent_payload)
-        agent_payload = {"id": 2, "role": "Seller", 
-                         "cost": self.state['cost'],}
-        self.send_message("init_agent", "barg_agent.BargAgent 2",
-                           agent_payload)
+        # odd agents are buyers, even agents are sellers
+        # Notice, keys in self.address_book.get_agents() are agent
+        # short names.
+        for k,agent_sn in enumerate(self.address_book.get_agents()):
+            agent_payload = {}
+            agent_payload['id'] = k
+            agent_payload['short_name'] = agent_sn
+            if k % 2 == 0:
+                agent_payload['role'] = 'Seller'
+                agent_payload['cost'] = self.state['cost']
+            else:
+                agent_payload['role'] = 'Buyer'
+                agent_payload['value'] = self.state['value']
+            self.send_message("init_agent", agent_sn, agent_payload)
 
  
     @directive_decorator("agent_confirm_init")
     def agent_confirm_init(self, message: Message):
         """
-        Receives confirmation from the agents that they are finished initializing. 
+        Receives confirmation from the agents that they are finished initializing. Starts bargaining.
         """
         self.num_agents_responded += 1
         if self.num_agents_responded == self.state['number_of_agents']:
             self.log_message(f"agents confirmed")
+            for agent_sn in self.address_book.get_agents():
+                self.log_message(f"agent = {agent_sn}")
             payload = self.address_book.get_agents()
             self.send_message("start_bargaining", 
                               "barg_institution.BargInstitution 1",
