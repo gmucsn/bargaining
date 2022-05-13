@@ -3,7 +3,7 @@
   "id": "1",
   "environment": "barg_environment.BargEnvironment",
   "institutions": [{"institution": "barg_institution.BargInstitution"}],          
-  "number_of_runs": 5,
+  "number_of_runs": 1,
   "agents": [{"agent_name": "barg_agent.BargAgent", "number": 2}],
   "properties": {"endowment": 1000,
                  "value": 800,
