@@ -1,0 +1,15 @@
+Environment -> Institution: start_bargaining
+Note right of Environment: agent_address_book
+Institution -> Agent: bargaining_open
+Agent-> Agent: wait_to_make_offer
+Agent -> Institution: request_standing
+Institution -> Agent: standing
+Note right of Institution: standing_bid, \n standing_ask
+Agent -> Institution: bid or ask
+Note left of Agent: {bid|ask},\n short_name
+Institution -> Environment: contract
+Note left of Institution: contract
+Environment->Environment: shutdown
+Environment->Institution: stop_bargaining
+
+

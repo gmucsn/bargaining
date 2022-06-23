@@ -1,0 +1,7 @@
+1653681026.4916027	"value: None, cost: 300"
+1653681026.4967124	"value: 800, cost: None"
+1653681026.502525	"id = barg_agent.BargAgent 1, ask = 616"
+1653681026.511327	"id = barg_agent.BargAgent 2, bid = 148"
+1653681030.5274458	"id = barg_agent.BargAgent 1, ask = 456"
+1653681030.5294967	"id = barg_agent.BargAgent 2, bid = 680"
+1653681030.5296402	"contract = ('barg_agent.BargAgent 2', 'barg_agent.BargAgent 1', 456)"

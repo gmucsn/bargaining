@@ -1,0 +1,22 @@
+{
+    "simulation_id": "1",
+    "simulation_run_id": "basic_config-2022_06_23-06_40_46_PM",
+    "run_number": 1,
+    "run_code": "445d70",
+    "mes_directory": "/auctions/bargaining",
+    "mes_log_directory": "/auctions/bargaining/logs/basic_config-2022_06_23-06_40_46_PM-R1",
+    "status": "Exception!",
+    "start_time": "2022-06-23 18:40:46.030140",
+    "end_time": "2022-06-23 18:40:46.105164",
+    "total_time": "0:00:00.075024",
+    "exception_payload": {
+        "error_message": "MES ENVIRONMENT CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: , Recipients: , Directive: setup_agents, Content: {'agent_class': 'barg_agent.BargAgent', 'num_agents': 2, 'source_hash': '265db97ac57e8d46a09cbe9a9503eb4f'}>\n\tError Type: <class 'AttributeError'>\n\tError: 'BargEnvironment' object has no attribute 'subjects'\n\n\tTrace Output: \n\t  File \"/mtree/mTree/microeconomic_system/environment.py\", line 169, in receiveMessage\n    directive_handler(self, message)\n\n\t  File \"/mtree/mTree/microeconomic_system/environment.py\", line 399, in setup_agents\n    logging.info(self.subjects)\n\n",
+        "source_message": "<Message Sender: , Recipients: , Directive: setup_agents, Content: {'agent_class': 'barg_agent.BargAgent', 'num_agents': 2, 'source_hash': '265db97ac57e8d46a09cbe9a9503eb4f'}>",
+        "error_type": "<class 'AttributeError'>",
+        "error": "'BargEnvironment' object has no attribute 'subjects'",
+        "filename": "/mtree/mTree/microeconomic_system/environment.py",
+        "lineno": 169,
+        "name": "receiveMessage",
+        "line": "directive_handler(self, message)"
+    }
+}

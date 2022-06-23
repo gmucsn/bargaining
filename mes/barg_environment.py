@@ -39,7 +39,6 @@ class BargEnvironment(Environment):
         self.state = {}
         self.num_agents_responded = None
 
-
     def send_message(self, directive, receiver, payload):
         """Sends message"""
         new_message = Message()
@@ -51,7 +50,6 @@ class BargEnvironment(Environment):
         receiver_address = self.address_book.select_addresses(
             {"short_name": receiver})
         self.send(receiver_address, new_message)
-
     
     def set_reminder(self, directive, seconds_to_reminder):
         """Sets a reminder to send a message"""
