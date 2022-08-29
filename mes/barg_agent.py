@@ -29,72 +29,22 @@ class BargAgent(Agent):
 
     Messages Sent
     """ 
-    def __init__(self):
-        self.my_id = None      
-        self.role = None  
-        self.value = None
-        self.cost = None
-        self.institution_address = None
-        self.environment_address = None
-        self.agent_dict = None
+    def prepare(self):
+        self.my_id = int(self.short_name[-1])
+        self.log_message(f'****<A> myid = {self.my_id}')
+        if self.my_id == 1:        
+            self.role = 'Buyer'
+            self.value = int(self.get_property("value"))
+        else:
+            self.role = 'Seller'
+            self.cost = int(self.get_property("cost"))
+
         self.offer_wait_time = 4
-        self.contract = None
-        self.current_standing = None
-        self.standing_ask = None
-        self.standing_bid = None
         self.barg_open = False
-        
-
-    def send_message(self, directive, receiver, payload, use_env):
-        """Sends message
-           use_env = True has method use environment address """
-        new_message = Message()
-        new_message.set_sender(self.myAddress)
-        new_message.set_directive(directive)
-        new_message.set_payload(payload)
-        if use_env:
-            receiver = "Environment"
-            receiver_address = self.environment_address
-        else:
-            receiver_address = self.institution_address
-        self.log_message(
-            f"...<A>.. Message {directive} .. {payload}") 
-        self.send(receiver_address, new_message)
-
-
-    @directive_decorator("init_agent")
-    def init_agent(self, message: Message):
-        """
-        Recieves the class variables for the agents and passes
-        the payload dictionary to setup_agent. This method also 
-        sends back a confirmation to the environment. 
-
-        Messages Handled :
-        - init_agents
-            sender: Environment 
-            payload = {'id': int,
-                       'role': 'Buyer'|'Seller',
-                       'value': int, or
-                       'cost': int}
-
-        Messages Sent: 
-        - agent_confirm_init  
-            receiver: Environment, 
-            payload:  None
-        """
-        self.environment_address = message.get_sender() 
-        payload = message.get_payload()
-        self.my_id = payload['id']
-        self.role = payload['role']
-        if self.role == 'Buyer':
-            self.value = int(payload['value'])
-        else:
-            self.cost = int(payload['cost'])
 
         self.log_message(f'***<A>*** {self.role}: Initialized')
         self.log_message(f'***<A>*** {self.role}: value/cost {self.value, self.cost}')
 
-        self.send_message("agent_confirm_init", "Environment", None, True)
 
     @directive_decorator("bargaining_open")
     def bargaining_open(self, message: Message):
@@ -113,14 +63,13 @@ class BargAgent(Agent):
         self.institution_address = message.get_sender()
         self.barg_open = True
         
-        self.send_message("request_standing", "Institution", self.short_name, False)
+        self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
         self.log_data(f"value: {self.value}, cost: {self.cost}")
     
     @directive_decorator("make_offer")
     def make_offer(self, message: Message):
         if self.barg_open:
-            self.send_message("request_standing", "Institution", 
-                               self.short_name, False)
+            self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
 
     def wait_offer(self):
         """
@@ -175,7 +124,7 @@ class BargAgent(Agent):
         bid = random.randint(10, self.value)
         payload = {'bid': bid, 'short_name': self.short_name}
         self.log_message(f'Agent {self.role}: Made bid {bid}: Payload = {payload}')
-        self.send_message("bid", "Institution", payload, False)
+        self.send_message("bid", "barg_institution.BargInstitution", payload)
         self.wait_offer()
 
  
@@ -195,7 +144,7 @@ class BargAgent(Agent):
         ask = random.randint(self.cost, 990)
         payload = {'ask': ask, 'short_name': self.short_name}
         self.log_message(f'Agent {self.role}: Made ask {ask}: Payload = {payload}')
-        self.send_message("ask", "Institution", payload, False)
+        self.send_message("ask", "barg_institution.BargInstitution", payload)
         self.wait_offer()
 
 
