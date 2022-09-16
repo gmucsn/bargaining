@@ -31,58 +31,16 @@ class BargInstitution(Institution):
                                            'seller_id': seller_short_name,}
     """
     
-    def __init__(self):
-        self.environment_address = None
+    def prepare(self):
         self.agent_id = None
         self.offer_history = []
-        self.standing_bid = None
-        self.standing_bid_id = None
-        self.standing_ask = None
-        self.standing_ask_id = None
-        self.barg_open = False
-
-
-    def send_message(self, directive, receiver, payload, use_env = False):
-        """Sends message
-           use_env = True has method use environment address """
-        new_message = Message()
-        new_message.set_sender(self.myAddress)
-        new_message.set_directive(directive)
-        new_message.set_payload(payload)
-        if use_env:
-            receiver = "Environment"
-            receiver_address = self.environment_address
-        else:
-            receiver_address = self.address_book.select_addresses(
-                               {"short_name": receiver})
-        self.log_message(
-            f"..<M>..Message {directive} from Institution sent to {receiver}") 
-        self.send(receiver_address, new_message)
-
-
-    @directive_decorator("init_institution")
-    def init_institution(self, message: Message):
-        """
-        Messages Handled :
-        - init_institution
-            sender: Environment 
-            payload: dict = {'starting_bid': int, 'starting_ask': int}
-
-        Messages Sent: 
-        - institution_confirm_init
-            receiver: Environment, 
-            payload:  None
-        """
-        #self.shutdown_mes() #Used for testing
-        self.environment_address = message.get_sender() #saves the environment address 
-        init_dict = message.get_payload()
-        self.standing_bid = init_dict['starting_bid']
+        self.standing_bid = int(self.get_property("starting_bid"))
         self.standing_bid_id = "INIT"
-        self.standing_ask = init_dict['starting_ask']
+        self.standing_ask = int(self.get_property("starting_ask"))
         self.standing_ask_id = "INIT"
+        self.barg_open = False
+        self.num_agents = 2
 
-        self.send_message("institution_confirm_init", "Environment", None, True)
-  
 
     @directive_decorator("start_bargaining")
     def start_bargaining(self, message: Message):
@@ -98,13 +56,14 @@ class BargInstitution(Institution):
             payload:   Institution address 
         """
         self.barg_open = True
-        self.address_book.merge_addresses(message.get_payload())
         self.log_message(f">>>...>>>{self.address_book.get_addresses()}")
         self.log_message(f"...>>>...{self.address_book.get_agents()}")
         #self.shutdown_mes() #Used for testing
         
-        for agent in self.address_book.get_addresses():
-            self.send_message("bargaining_open", agent, None, False) 
+        for k in range(self.num_agents):
+            agent = f"barg_agent.BargAgent {k+1}"
+            self.log_message(f"<...> Institution [start_bargaining] agent = {agent}")
+            self.send_message("bargaining_open", agent) 
 
 
     @directive_decorator("request_standing")
@@ -124,8 +83,8 @@ class BargInstitution(Institution):
         """
         agent_id = message.get_payload() #saves the agent short_name 
         self.log_message(f"...!!!...!!! standing {agent_id}")
-        self.send_message("standing", agent_id, (self.standing_bid, 
-                           self.standing_ask), False)
+        payload = (self.standing_bid, self.standing_ask)
+        self.send_message("standing", agent_id, payload)
         #self.shutdown_mes() # Used for testing
 
     @directive_decorator("bid")

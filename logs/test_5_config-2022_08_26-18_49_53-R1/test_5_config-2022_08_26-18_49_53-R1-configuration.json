@@ -6,7 +6,7 @@
     "environment": "barg_environment.BargEnvironment",
     "institutions": [
         {
-            "institution": "barg_institution.BargInstitution"
+            "institution_name": "barg_institution.BargInstitution"
         }
     ],
     "number_of_runs": 1,
@@ -29,7 +29,7 @@
         "escrow": 0
     },
     "data_logging": false,
-    "source_hash": "265db97ac57e8d46a09cbe9a9503eb4f",
-    "simulation_run_id": "basic_config-2022_06_16-07_27_23_PM",
-    "mes_directory": "/auctions/bargaining"
+    "source_hash": "3118b3be73665848a89363f8a6e5d6a3",
+    "simulation_run_id": "test_5_config-2022_08_26-18_49_53",
+    "mes_directory": "/auctions"
 }

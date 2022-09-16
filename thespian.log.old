@@ -1,0 +1,326 @@
+2022-08-24 22:00:02.212030 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.998487-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.998475)
+2022-08-24 22:00:02.212421 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999929-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/mes_container.py, 396, "MES Container Started">-quit_0:04:59.999917)
+2022-08-24 22:00:02.214778 p457 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:34767), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:02.224340 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999921-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/mes_container.py, 396, "MES Container Started">-quit_0:04:59.999904)
+2022-08-24 22:00:02.225985 p457 dbg  Attempting intent TransportIntent(ActorAddr-(T|:44111)-pending-ExpiresIn_0:04:59.999987-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999975)
+2022-08-24 22:00:02.227774 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:44111)-pending-ExpiresIn_0:04:59.998409-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.998398)
+2022-08-24 22:00:02.229653 p459 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:33585), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:02.229738 p457 dbg  Attempting intent TransportIntent(ActorAddr-(T|:33035)-pending-ExpiresIn_0:04:59.999978-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999965)
+2022-08-24 22:00:02.231852 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:33035)-pending-ExpiresIn_0:04:59.997944-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997933)
+2022-08-24 22:00:02.232127 p459 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999796-<class 'logging.LogRecord'>-<LogRecord: root, 20, log_actor.py, 254, "Completing Log Files...">-quit_0:04:59.999784)
+2022-08-24 22:00:02.234519 p457 dbg  Attempting intent TransportIntent(ActorAddr-(T|:36091)-pending-ExpiresIn_0:04:59.999985-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999967)
+2022-08-24 22:00:02.234560 p461 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:33585), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:02.237342 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:36091)-pending-ExpiresIn_0:04:59.997104-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997082)
+2022-08-24 22:00:02.238030 p461 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999974-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:33035)-quit_0:04:59.999958)
+2022-08-24 22:00:02.239565 p457 dbg  Attempting intent TransportIntent(ActorAddr-(T|:36679)-pending-ExpiresIn_0:04:59.999985-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999972)
+2022-08-24 22:00:02.240480 p462 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:33585), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:02.241440 p461 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.995940-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:33035)-quit_0:04:59.995919)
+2022-08-24 22:00:02.241460 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:36679)-pending-ExpiresIn_0:04:59.997311-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997298)
+2022-08-24 22:00:02.242826 p462 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999957-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36091)-quit_0:04:59.999935)
+2022-08-24 22:00:02.243915 p457 dbg  Attempting intent TransportIntent(ActorAddr-(T|:40807)-pending-ExpiresIn_0:04:59.999974-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999939)
+2022-08-24 22:00:02.244279 p460 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:33585), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:02.244903 p461 dbg  Run barg_institution.BargInstitution done
+2022-08-24 22:00:02.244949 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:33035), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:33035))
+2022-08-24 22:00:02.245270 p462 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.997168-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36091)-quit_0:04:59.997144)
+2022-08-24 22:00:02.246381 p460 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999953-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36679)-quit_0:04:59.999928)
+2022-08-24 22:00:02.246437 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40807)-pending-ExpiresIn_0:04:59.997581-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997562)
+2022-08-24 22:00:02.247122 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.999975-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:33035)-quit_0:04:59.999958)
+2022-08-24 22:00:02.248005 p459 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999425-<class 'logging.LogRecord'>-<LogRecord: root, 20, log_actor.py, 259, "Completing Log Sequence Files...">-quit_0:04:59.999411)
+2022-08-24 22:00:02.248470 p460 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.997662-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36679)-quit_0:04:59.997627)
+2022-08-24 22:00:02.249198 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.997808-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:33035)-quit_0:04:59.997791)
+2022-08-24 22:00:02.250086 p463 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:33585), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:02.251000 p457 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:33035))
+2022-08-24 22:00:02.252898 p460 dbg  Run barg_environment.BargEnvironment done
+2022-08-24 22:00:02.252760 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:36679), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:36679))
+2022-08-24 22:00:02.252994 p463 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999947-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:40807)-quit_0:04:59.999921)
+2022-08-24 22:00:02.253492 p462 dbg  Run barg_agent.BargAgent done
+2022-08-24 22:00:02.254341 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999869-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/mes_container.py, 396, "MES Container Started">-quit_0:04:59.999843)
+2022-08-24 22:00:02.254627 p459 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999832-<class 'logging.LogRecord'>-<LogRecord: root, 20, log_actor.py, 269, "Completing Log Event Files...">-quit_0:04:59.999818)
+2022-08-24 22:00:02.255302 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.999974-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36679)-quit_0:04:59.999956)
+2022-08-24 22:00:02.255801 p463 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.996203-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:40807)-quit_0:04:59.996181)
+2022-08-24 22:00:02.257867 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.997669-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36679)-quit_0:04:59.997654)
+2022-08-24 22:00:02.260128 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:36091), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:36091))
+2022-08-24 22:00:02.262181 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.999975-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36091)-quit_0:04:59.999952)
+2022-08-24 22:00:02.263939 p459 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999854-<class 'logging.LogRecord'>-<LogRecord: root, 20, log_actor.py, 286, "Completing Log Data Files...">-quit_0:04:59.999841)
+2022-08-24 22:00:02.263974 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.997906-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:36091)-quit_0:04:59.997892)
+2022-08-24 22:00:02.266403 p457 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:36679))
+2022-08-24 22:00:02.266721 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:40807), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:40807))
+2022-08-24 22:00:02.266769 p463 dbg  Run barg_agent.BargAgent done
+2022-08-24 22:00:02.269030 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999905-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/mes_container.py, 396, "MES Container Started">-quit_0:04:59.999888)
+2022-08-24 22:00:02.269171 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.999975-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:40807)-quit_0:04:59.999951)
+2022-08-24 22:00:02.270662 p459 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999960-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44111)-quit_0:04:59.999941)
+2022-08-24 22:00:02.270711 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.997569-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:40807)-quit_0:04:59.997556)
+2022-08-24 22:00:02.272516 p459 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.998297-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44111)-quit_0:04:59.998285)
+2022-08-24 22:00:02.272734 p457 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:36091))
+2022-08-24 22:00:02.274438 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:44111), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:44111))
+2022-08-24 22:00:02.274469 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999922-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/mes_container.py, 396, "MES Container Started">-quit_0:04:59.999909)
+2022-08-24 22:00:02.276207 p459 dbg  Run log_actor.LogActor done
+2022-08-24 22:00:02.276237 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.999975-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44111)-quit_0:04:59.999958)
+2022-08-24 22:00:02.276308 p457 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:40807))
+2022-08-24 22:00:02.278091 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999914-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/mes_container.py, 396, "MES Container Started">-quit_0:04:59.999897)
+2022-08-24 22:00:02.278173 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:33585)-pending-ExpiresIn_0:04:59.997999-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44111)-quit_0:04:59.997983)
+2022-08-24 22:00:02.280348 p457 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:44111))
+2022-08-24 22:00:02.282022 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999948-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/mes_container.py, 396, "MES Container Started">-quit_0:04:59.999937)
+2022-08-24 22:00:02.283865 p457 dbg  Attempting intent TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.999987-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:33585)-quit_0:04:59.999975)
+2022-08-24 22:00:02.285596 p457 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.998050-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:33585)-quit_0:04:59.998034)
+2022-08-24 22:00:02.287455 p457 dbg  Run mTree.microeconomic_system.mes_container.MESContainer done
+2022-08-24 22:00:02.287508 p356 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:33585), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:33585))
+2022-08-24 22:00:02.289642 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999922-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/dispatcher.py, 500, "Dispatcher recieved message: ChildActorExited:ActorAddr-(T|:33585)">-quit_0:04:59.999908)
+2022-08-24 22:00:02.291726 p356 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:34767), <class 'thespian.system.messages.multiproc.ChildMayHaveDied'> msg: <thespian.system.messages.multiproc.ChildMayHaveDied object at 0x7f0635b0a430>)
+2022-08-24 22:00:07.089784 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:40175), <class 'thespian.system.messages.admin.PendingActor'> msg: PendingActor#14_of_Noneis"Dispatcher")
+2022-08-24 22:00:07.091744 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:40175)-pending-ExpiresIn_0:04:59.999964-<class 'thespian.system.messages.admin.PendingActorResponse'>-PendingActorResponse(for None inst# 14) errCode None actual ActorAddr-(T|:34767)-quit_0:04:59.999947)
+2022-08-24 22:00:07.093587 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40175)-pending-ExpiresIn_0:04:59.998027-<class 'thespian.system.messages.admin.PendingActorResponse'>-PendingActorResponse(for None inst# 14) errCode None actual ActorAddr-(T|:34767)-quit_0:04:59.998013)
+2022-08-24 22:00:07.096468 p356 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:40153), <class 'mTree.microeconomic_system.message.Message'> msg: <Message Sender: , Recipients: , Directive: check_status, Content: None>)
+2022-08-24 22:00:07.098583 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999920-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/dispatcher.py, 500, "Dispatcher recieved message: <Message Sender: , Recipients: , Directive: ...-quit_0:04:59.999903)
+2022-08-24 22:00:07.100644 p356 dbg  Attempting intent TransportIntent(ActorAddr-(T|:40153)-pending-ExpiresIn_0:04:59.999979-<class 'list'>-[['b49b8f', 'bargain', 1, 'Killed', '0:01:45.778067'], ['9acc47', 'bargain', 1, 'Killed', '0:04:05.136504'], ['efe4d2', 'bargain', 1, 'Killed', '0:01:...-quit_0:04:59.999967)
+2022-08-24 22:00:07.102505 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40153)-pending-ExpiresIn_0:04:59.997962-<class 'list'>-[['b49b8f', 'bargain', 1, 'Killed', '0:01:45.778067'], ['9acc47', 'bargain', 1, 'Killed', '0:04:05.136504'], ['efe4d2', 'bargain', 1, 'Killed', '0:01:...-quit_0:04:59.997947)
+2022-08-24 22:00:09.106384 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:40153), <class 'thespian.system.messages.admin.SystemShutdown'> msg: <thespian.system.messages.admin.SystemShutdown object at 0x7f0635b17910>)
+2022-08-24 22:00:09.106495 p328 Warn Expected shutdown completed message, got: [['b49b8f', 'bargain', 1, 'Killed', '0:01:45.778067'], ['9acc47', 'bargain', 1, 'Killed', '0:04:05.136504'], ['efe4d2', 'bargain', 1, 'Killed', '0:01:49.567222']]
+2022-08-24 22:00:09.111702 p353 dbg  ---- shutdown initiated by ActorAddr-(T|:40153)
+2022-08-24 22:00:09.116673 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:43107)-pending-ExpiresIn_0:04:59.999978-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999963)
+2022-08-24 22:00:09.122190 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:43107)-pending-ExpiresIn_0:04:59.994567-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.994553)
+2022-08-24 22:00:09.127023 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.999980-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999964)
+2022-08-24 22:00:09.127816 p355 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:09.129700 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.994652-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.994639)
+2022-08-24 22:00:09.129795 p355 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999907-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/system_status_actor.py, 24, "SSA received a message">-quit_0:04:59.999837)
+2022-08-24 22:00:09.132288 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:45929)-pending-ExpiresIn_0:04:59.999987-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999974)
+2022-08-24 22:00:09.132354 p355 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999921-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/system_status_actor.py, 25, "ActorExitRequest">-quit_0:04:59.999907)
+2022-08-24 22:00:09.132531 p356 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:09.133892 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:45929)-pending-ExpiresIn_0:04:59.997485-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997453)
+2022-08-24 22:00:09.133892 p355 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999982-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:43107)-quit_0:04:59.999968)
+2022-08-24 22:00:09.134592 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999908-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/dispatcher.py, 500, "Dispatcher recieved message: ActorExitRequest">-quit_0:04:59.999895)
+2022-08-24 22:00:09.136000 p355 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.998045-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:43107)-quit_0:04:59.998032)
+2022-08-24 22:00:09.136226 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:43715)-pending-ExpiresIn_0:04:59.999985-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999973)
+2022-08-24 22:00:09.137158 p410 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:09.137184 p356 dbg  Attempting intent TransportIntent(ActorAddr-(T|:45929)-pending-ExpiresIn_0:04:59.999980-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999965)
+2022-08-24 22:00:09.138437 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:43715)-pending-ExpiresIn_0:04:59.997832-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997818)
+2022-08-24 22:00:09.139134 p410 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999973-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:45929)-quit_0:04:59.999957)
+2022-08-24 22:00:09.139332 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:45929)-pending-ExpiresIn_0:04:59.997581-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997543)
+2022-08-24 22:00:09.140210 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:44539)-pending-ExpiresIn_0:04:59.999981-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999960)
+2022-08-24 22:00:09.140994 p434 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:09.141022 p410 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.997923-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:45929)-quit_0:04:59.997909)
+2022-08-24 22:00:09.141335 p356 dbg  Attempting intent TransportIntent(ActorAddr-(T|:43715)-pending-ExpiresIn_0:04:59.999983-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999968)
+2022-08-24 22:00:09.142102 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:44539)-pending-ExpiresIn_0:04:59.998033-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.998018)
+2022-08-24 22:00:09.142802 p434 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999968-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:43715)-quit_0:04:59.999951)
+2022-08-24 22:00:09.142939 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:43715)-pending-ExpiresIn_0:04:59.998043-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.998023)
+2022-08-24 22:00:09.144121 p458 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ActorExitRequest'> msg: ActorExitRequest)
+2022-08-24 22:00:09.144310 p434 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.998456-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:43715)-quit_0:04:59.998443)
+2022-08-24 22:00:09.144652 p356 dbg  Attempting intent TransportIntent(ActorAddr-(T|:44539)-pending-ExpiresIn_0:04:59.999981-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.999962)
+2022-08-24 22:00:09.145203 p355 dbg  Run mTree.microeconomic_system.system_status_actor.SystemStatusActor done
+2022-08-24 22:00:09.145222 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:43107), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:43107))
+2022-08-24 22:00:09.145270 p410 dbg  Run barg_environment.BargEnvironment done
+2022-08-24 22:00:09.146521 p458 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999971-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44539)-quit_0:04:59.999954)
+2022-08-24 22:00:09.146671 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:44539)-pending-ExpiresIn_0:04:59.997719-<class 'thespian.actors.ActorExitRequest'>-ActorExitRequest-quit_0:04:59.997704)
+2022-08-24 22:00:09.147280 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:45929), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:45929))
+2022-08-24 22:00:09.148821 p458 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.997635-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44539)-quit_0:04:59.997612)
+2022-08-24 22:00:09.148979 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.999958-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:45929)-quit_0:04:59.999936)
+2022-08-24 22:00:09.150872 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.998347-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:45929)-quit_0:04:59.998335)
+2022-08-24 22:00:09.153190 p356 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:45929))
+2022-08-24 22:00:09.153523 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:43715), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:43715))
+2022-08-24 22:00:09.153583 p434 dbg  Run barg_environment.BargEnvironment done
+2022-08-24 22:00:09.153634 p458 dbg  Run barg_environment.BargEnvironment done
+2022-08-24 22:00:09.155023 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.999983-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:43715)-quit_0:04:59.999970)
+2022-08-24 22:00:09.155178 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999918-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/dispatcher.py, 500, "Dispatcher recieved message: ChildActorExited:ActorAddr-(T|:45929)">-quit_0:04:59.999903)
+2022-08-24 22:00:09.157189 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.998195-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:43715)-quit_0:04:59.998177)
+2022-08-24 22:00:09.159006 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:44539), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:44539))
+2022-08-24 22:00:09.160614 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.999984-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44539)-quit_0:04:59.999970)
+2022-08-24 22:00:09.162580 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:34767)-pending-ExpiresIn_0:04:59.998273-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:44539)-quit_0:04:59.998259)
+2022-08-24 22:00:09.164991 p356 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:43715))
+2022-08-24 22:00:09.166731 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999925-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/dispatcher.py, 500, "Dispatcher recieved message: ChildActorExited:ActorAddr-(T|:43715)">-quit_0:04:59.999913)
+2022-08-24 22:00:09.168743 p356 dbg  ACTOR got ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:44539))
+2022-08-24 22:00:09.170475 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.999946-<class 'logging.LogRecord'>-<LogRecord: root, 20, /mtree/mTree/microeconomic_system/dispatcher.py, 500, "Dispatcher recieved message: ChildActorExited:ActorAddr-(T|:44539)">-quit_0:04:59.999936)
+2022-08-24 22:00:09.172681 p356 dbg  Attempting intent TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999988-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:34767)-quit_0:04:59.999977)
+2022-08-24 22:00:09.174409 p356 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.997660-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:34767)-quit_0:04:59.997646)
+2022-08-24 22:00:09.176135 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:34767), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:34767))
+2022-08-24 22:00:09.176186 p356 dbg  Run mTree.microeconomic_system.dispatcher.Dispatcher done
+2022-08-24 22:00:09.179757 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40779)-pending-ExpiresIn_0:04:59.998516-<class 'thespian.system.logdirector.LoggerExitRequest'>-<thespian.system.logdirector.LoggerExitRequest object at 0x7f0635173ee0>-quit_0:04:59.998503)
+2022-08-24 22:00:09.182482 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999867-<class 'thespian.actors.ChildActorExited'>-ChildActorExited:ActorAddr-(T|:34767)-quit_0:04:59.999857)
+2022-08-24 22:00:09.184286 p353 dbg  Admin of ReceiveEnvelope(from: ActorAddr-(T|:1900), <class 'thespian.actors.ChildActorExited'> msg: ChildActorExited:ActorAddr-(T|:34767))
+2022-08-24 22:00:09.186283 p353 dbg  Attempting intent TransportIntent(ActorAddr-(T|:40153)-pending-ExpiresIn_0:04:59.999987-<class 'thespian.system.messages.admin.SystemShutdownCompleted'>-<thespian.system.messages.admin.SystemShutdownCompleted object at 0x7f0635b178b0>-quit_0:04:59.999979)
+2022-08-24 22:00:09.188748 p353 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:40153)-pending-ExpiresIn_0:04:59.998186-<class 'thespian.system.messages.admin.SystemShutdownCompleted'>-<thespian.system.messages.admin.SystemShutdownCompleted object at 0x7f0635b178b0>-quit_0:04:59.998176)
+2022-08-24 22:00:09.190692 p353 I    ---- shutdown completed
+2022-08-24 22:00:09.193343 p353 dbg  Admin time to die
+2022-08-26 18:38:27.776691 p55 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999892-<class 'thespian.system.messages.admin.QueryExists'>-<thespian.system.messages.admin.QueryExists object at 0x7f19179637c0>-quit_0:04:59.999868)
+2022-08-26 18:38:27.793311 p55 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:1900)-pending-ExpiresIn_0:04:59.999915-<class 'thespian.system.messages.admin.PendingActor'>-PendingActor#1_of_Noneis"SystemStatusActor"-quit_0:04:59.999894)
+2022-08-26 18:38:27.798912 p55 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:43173)-pending-ExpiresIn_0:04:59.999922-<class 'str'>-system_status_actor_initialization-quit_0:04:59.999898)
+2022-08-26 18:38:27.802859 p55 dbg  actualTransmit of TransportIntent(ActorAddr-(T|:43173)-pending-ExpiresIn_0:04:59.999916-<class 'mTree.microeconomic_system.admin_message.AdminMessage'>-<AdminMessage Request: system_running, Response: None, Payload: None>-quit_0:04:59.999893)
+2022-08-26 18:39:38.001396 p122 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:39757) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES CRASHING IN PREPARATION - EXCEPTION FOLLOWS \n\tError Type: <class \'AttributeError\'>\n\tError: \'BargAgent\' object has no attribute \'cost\'\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 65, in invoke_prepare\n    self.prepare()\n\n\t  File "barg_agent.py", line 46, in prepare\n\n', 'error_type': "<class 'AttributeError'>", 'error': "'BargAgent' object has no attribute 'cost'", 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 65, 'name': 'invoke_prepare', 'line': 'self.prepare()'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:39:38.014474 p122 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:39757) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES CRASHING IN PREPARATION - EXCEPTION FOLLOWS \n\tError Type: <class \'AttributeError\'>\n\tError: \'BargAgent\' object has no attribute \'value\'\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 65, in invoke_prepare\n    self.prepare()\n\n\t  File "barg_agent.py", line 46, in prepare\n\n', 'error_type': "<class 'AttributeError'>", 'error': "'BargAgent' object has no attribute 'value'", 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 65, 'name': 'invoke_prepare', 'line': 'self.prepare()'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:39:38.029280 p122 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:39757) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES AGENT CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: , Recipients: , Directive: bargaining_open, Content: None>\n\tError Type: <class \'thespian.actors.InvalidActorAddress\'>\n\tError: [] is not a valid ActorAddress for sending messages to\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 307, in receiveMessage\n    directive_handler(self, message)\n\n\t  File "barg_agent.py", line 66, in bargaining_open\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 275, in send_message\n    self.send(receiver_address, new_message)\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 287, in send\n    super().send(targetAddress, message)\n\n\t  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/actors.py", line 199, in send\n    raise InvalidActorAddress(\n\n', 'source_message': '<Message Sender: , Recipients: , Directive: bargaining_open, Content: None>', 'error_type': "<class 'thespian.actors.InvalidActorAddress'>", 'error': '[] is not a valid ActorAddress for sending messages to', 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 307, 'name': 'receiveMessage', 'line': 'directive_handler(self, message)'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:39:38.043379 p122 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:39757) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES AGENT CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: , Recipients: , Directive: bargaining_open, Content: None>\n\tError Type: <class \'thespian.actors.InvalidActorAddress\'>\n\tError: [] is not a valid ActorAddress for sending messages to\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 307, in receiveMessage\n    directive_handler(self, message)\n\n\t  File "barg_agent.py", line 66, in bargaining_open\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 275, in send_message\n    self.send(receiver_address, new_message)\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 287, in send\n    super().send(targetAddress, message)\n\n\t  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/actors.py", line 199, in send\n    raise InvalidActorAddress(\n\n', 'source_message': '<Message Sender: , Recipients: , Directive: bargaining_open, Content: None>', 'error_type': "<class 'thespian.actors.InvalidActorAddress'>", 'error': '[] is not a valid ActorAddress for sending messages to', 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 307, 'name': 'receiveMessage', 'line': 'directive_handler(self, message)'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:46:04.796559 p164 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:43681) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES CRASHING IN PREPARATION - EXCEPTION FOLLOWS \n\tError Type: <class \'AttributeError\'>\n\tError: \'BargAgent\' object has no attribute \'cost\'\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 65, in invoke_prepare\n    self.prepare()\n\n\t  File "barg_agent.py", line 46, in prepare\n\n', 'error_type': "<class 'AttributeError'>", 'error': "'BargAgent' object has no attribute 'cost'", 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 65, 'name': 'invoke_prepare', 'line': 'self.prepare()'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:46:04.807007 p164 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:43681) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES CRASHING IN PREPARATION - EXCEPTION FOLLOWS \n\tError Type: <class \'AttributeError\'>\n\tError: \'BargAgent\' object has no attribute \'value\'\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 65, in invoke_prepare\n    self.prepare()\n\n\t  File "barg_agent.py", line 46, in prepare\n\n', 'error_type': "<class 'AttributeError'>", 'error': "'BargAgent' object has no attribute 'value'", 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 65, 'name': 'invoke_prepare', 'line': 'self.prepare()'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:46:04.817109 p164 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:43681) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES AGENT CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: , Recipients: , Directive: bargaining_open, Content: None>\n\tError Type: <class \'thespian.actors.InvalidActorAddress\'>\n\tError: [] is not a valid ActorAddress for sending messages to\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 307, in receiveMessage\n    directive_handler(self, message)\n\n\t  File "barg_agent.py", line 66, in bargaining_open\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 275, in send_message\n    self.send(receiver_address, new_message)\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 287, in send\n    super().send(targetAddress, message)\n\n\t  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/actors.py", line 199, in send\n    raise InvalidActorAddress(\n\n', 'source_message': '<Message Sender: , Recipients: , Directive: bargaining_open, Content: None>', 'error_type': "<class 'thespian.actors.InvalidActorAddress'>", 'error': '[] is not a valid ActorAddress for sending messages to', 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 307, 'name': 'receiveMessage', 'line': 'directive_handler(self, message)'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:46:04.827517 p164 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:43681) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES AGENT CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: , Recipients: , Directive: bargaining_open, Content: None>\n\tError Type: <class \'thespian.actors.InvalidActorAddress\'>\n\tError: [] is not a valid ActorAddress for sending messages to\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 307, in receiveMessage\n    directive_handler(self, message)\n\n\t  File "barg_agent.py", line 66, in bargaining_open\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 275, in send_message\n    self.send(receiver_address, new_message)\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 287, in send\n    super().send(targetAddress, message)\n\n\t  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/actors.py", line 199, in send\n    raise InvalidActorAddress(\n\n', 'source_message': '<Message Sender: , Recipients: , Directive: bargaining_open, Content: None>', 'error_type': "<class 'thespian.actors.InvalidActorAddress'>", 'error': '[] is not a valid ActorAddress for sending messages to', 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 307, 'name': 'receiveMessage', 'line': 'directive_handler(self, message)'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:49:53.416030 p196 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:44199) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES CRASHING IN PREPARATION - EXCEPTION FOLLOWS \n\tError Type: <class \'AttributeError\'>\n\tError: \'BargAgent\' object has no attribute \'cost\'\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 65, in invoke_prepare\n    self.prepare()\n\n\t  File "barg_agent.py", line 46, in prepare\n\n', 'error_type': "<class 'AttributeError'>", 'error': "'BargAgent' object has no attribute 'cost'", 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 65, 'name': 'invoke_prepare', 'line': 'self.prepare()'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+2022-08-26 18:49:53.427020 p196 Warn Actor barg_environment.BargEnvironment @ ActorAddr-(T|:44199) retryable exception on message <Message Sender: , Recipients: , Directive: excepted_mes, Content: {'error_message': 'MES AGENT CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: , Recipients: , Directive: bargaining_open, Content: None>\n\tError Type: <class \'thespian.actors.InvalidActorAddress\'>\n\tError: [] is not a valid ActorAddress for sending messages to\n\n\tTrace Output: \n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 307, in receiveMessage\n    directive_handler(self, message)\n\n\t  File "barg_agent.py", line 67, in bargaining_open\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 275, in send_message\n    self.send(receiver_address, new_message)\n\n\t  File "/mtree/mTree/microeconomic_system/agent.py", line 287, in send\n    super().send(targetAddress, message)\n\n\t  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/actors.py", line 199, in send\n    raise InvalidActorAddress(\n\n', 'source_message': '<Message Sender: , Recipients: , Directive: bargaining_open, Content: None>', 'error_type': "<class 'thespian.actors.InvalidActorAddress'>", 'error': '[] is not a valid ActorAddress for sending messages to', 'filename': '/mtree/mTree/microeconomic_system/agent.py', 'lineno': 307, 'name': 'receiveMessage', 'line': 'directive_handler(self, message)'}>: Traceback (most recent call last):
+  File "/mtree/mTree/microeconomic_system/environment.py", line 217, in receiveMessage
+    directive_handler(self, message)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/thespian-3.10.6-py3.9.egg/thespian/system/actorManager.py", line 164, in _handleOneMessage
+    actor_result = self.actorInst.receiveMessage(msg, envelope.sender)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 248, in receiveMessage
+    self.excepted_mes(exception_payload)
+  File "/mtree/mTree/microeconomic_system/environment.py", line 168, in excepted_mes
+    self.send(self.dispatcher, new_message)
+AttributeError: 'BargEnvironment' object has no attribute 'dispatcher'
+
