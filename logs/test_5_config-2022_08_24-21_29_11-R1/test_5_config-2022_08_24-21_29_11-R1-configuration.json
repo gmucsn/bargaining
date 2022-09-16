@@ -29,13 +29,7 @@
         "escrow": 0
     },
     "data_logging": false,
-<<<<<<<< HEAD:logs/test_5_config-2022_08_26-19_00_51-R1/test_5_config-2022_08_26-19_00_51-R1-configuration.json
-    "source_hash": "80bd27602564f79c6e978046235cc6d9",
-    "simulation_run_id": "test_5_config-2022_08_26-19_00_51",
-    "mes_directory": "/auctions"
-========
-    "source_hash": "a2e81d5e3180eeb6a25ccf8d6fb89a97",
-    "simulation_run_id": "test_5_config-2022_08_29-18_59_05",
+    "source_hash": "7a0cb318c4445c127c1d354175b03655",
+    "simulation_run_id": "test_5_config-2022_08_24-21_29_11",
     "mes_directory": "/auctions/bargaining"
->>>>>>>> 4e91b2ddcd3640e03ed5c74b6636e516070ea1ff:logs/test_5_config-2022_08_29-18_59_05-R1/test_5_config-2022_08_29-18_59_05-R1-configuration.json
 }

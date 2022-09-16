@@ -19,6 +19,7 @@ class BargAgent(Agent):
     """ 
     def prepare(self):
         self.my_id = int(self.short_name[-1])
+        self.log_message(f'****<A> myid = {self.my_id}')
         if self.my_id == 1:        
             self.role = 'Buyer'
             self.value = int(self.get_property("value"))
@@ -41,13 +42,13 @@ class BargAgent(Agent):
         self.log_message("Got to bargaining open", self.short_name)
         self.barg_open = True
         
-        self.send_message("request_standing", "barg_institution.BargInstitution")
+        self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
         self.log_data(f"value: {self.value}, cost: {self.cost}")
     
     @directive_decorator("make_offer")
     def make_offer(self, message: Message):
         if self.barg_open:
-            self.send_message("request_standing", "barg_institution.BargInstitution")
+            self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
 
     def wait_offer(self):
         """

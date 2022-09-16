@@ -1,0 +1,8 @@
+1661620315.7306516	"id = barg_agent.BargAgent 2, ask = 613"
+1661620315.7327418	"id = barg_agent.BargAgent 1, bid = 602"
+1661620319.752507	"id = barg_agent.BargAgent 2, ask = 843"
+1661620319.7552269	"id = barg_agent.BargAgent 1, bid = 312"
+1661620323.766169	"id = barg_agent.BargAgent 2, ask = 360"
+1661620323.7679179	"id = barg_agent.BargAgent 1, bid = 771"
+1661620323.7680635	"contract = ('barg_agent.BargAgent 1', 'barg_agent.BargAgent 2', 360)"
+1661620330.704531	"no contract"

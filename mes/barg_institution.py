@@ -56,13 +56,12 @@ class BargInstitution(Institution):
             payload:   Institution address 
         """
         self.barg_open = True
-        self.log_message(f">>>...>>>{self.address_book.get_addresses()}")
-        self.log_message(f"...>>>...{self.address_book.get_agents()}")
-        #self.shutdown_mes() #Used for testing
+        self.log_message(f"***<I>*** [start bargaining] addresses = {self.address_book.get_addresses()}")
+        self.log_message(f"***<I>*** [start bargaining] agents ={self.address_book.get_agents()}")
+        self.shutdown_mes() #Used for testing
         
         for k in range(self.num_agents):
             agent = f"barg_agent.BargAgent {k+1}"
-            self.log_message(f"<...> Institution [start_bargaining] agent = {agent}")
             self.send_message("bargaining_open", agent) 
 
 
@@ -113,7 +112,7 @@ class BargInstitution(Institution):
             self.barg_open = False
             contract = (self.agent_id, self.standing_ask_id, self.standing_ask)
             self.log_data(f"contract = {contract}")
-            self.send_message("contract", "Environment", contract, True)
+            self.send_message("contract", "barg_environment.BargEnvironment", contract, True)
             #self.shutdown_mes() #Used for testing
  
         elif self.agent_bid < self.standing_ask:
@@ -146,7 +145,7 @@ class BargInstitution(Institution):
             self.barg_open = False
             contract = (self.standing_bid_id, self.agent_id, self.standing_bid)
             self.log_data(f"contract = {contract}")
-            self.send_message("contract", "Environment", contract, True)
+            self.send_message("contract", "barg_environment.BargEnvironment", contract, True)
             #self.shutdown_mes() #Used for testing
 
         elif self.agent_ask > self.standing_bid:
