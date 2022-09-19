@@ -1,9 +1,0 @@
-{
-    "error_message": "MES CRASHING IN PREPARATION - EXCEPTION FOLLOWS \n\tError Type: <class 'AttributeError'>\n\tError: 'BargAgent' object has no attribute 'value'\n\n\tTrace Output: \n\t  File \"/mtree/mTree/microeconomic_system/agent.py\", line 62, in invoke_prepare\n    self.prepare()\n\n\t  File \"barg_agent.py\", line 47, in prepare\n\n",
-    "error_type": "<class 'AttributeError'>",
-    "error": "'BargAgent' object has no attribute 'value'",
-    "filename": "/mtree/mTree/microeconomic_system/agent.py",
-    "lineno": 62,
-    "name": "invoke_prepare",
-    "line": "self.prepare()"
-}

@@ -36,11 +36,7 @@ class BargEnvironment(Environment):
     """
 
     def prepare(self): 
-<<<<<<< HEAD
-        self.log_message(self.address_book.get_addresses()) 
-=======
         self.log_message(f'***<E>*** addresses = {self.address_book.get_addresses()}') 
->>>>>>> 4e91b2ddcd3640e03ed5c74b6636e516070ea1ff
         self.state = {}     
         # agent related
         self.state['endowment'] = int(self.get_property("endowment"))
@@ -55,11 +51,7 @@ class BargEnvironment(Environment):
         self.state['period_length'] = int(self.get_property("period_length"))
         self.state['number_of_agents'] = int(self.get_property("number_of_agents"))
         self.state['contract'] = None
-<<<<<<< HEAD
-        self.log_message(self.state)
-=======
         self.log_message(f'***<E>*** state = {self.state}')
->>>>>>> 4e91b2ddcd3640e03ed5c74b6636e516070ea1ff
    
 
     def set_reminder(self, directive, seconds_to_reminder):
