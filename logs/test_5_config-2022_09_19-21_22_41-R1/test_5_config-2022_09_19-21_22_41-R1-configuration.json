@@ -1,0 +1,35 @@
+{
+    "mtree_type": "mes_simulation_description",
+    "name": "bargain",
+    "id": "1",
+    "description": null,
+    "environment": "barg_environment.BargEnvironment",
+    "institutions": [
+        {
+            "institution_name": "barg_institution.BargInstitution"
+        }
+    ],
+    "number_of_runs": 1,
+    "agents": [
+        {
+            "agent_name": "barg_agent.BargAgent",
+            "number": 2
+        }
+    ],
+    "properties": {
+        "endowment": 1000,
+        "value": 800,
+        "cost": 300,
+        "starting_bid": 0,
+        "starting_ask": 1000,
+        "period_length": 15,
+        "offer_wait_time": 3,
+        "number_of_rounds": 1,
+        "number_of_agents": 2,
+        "escrow": 0
+    },
+    "data_logging": false,
+    "source_hash": "07f9d1dbd61c0c5927325d8065f541a3",
+    "simulation_run_id": "test_5_config-2022_09_19-21_22_41",
+    "mes_directory": "/auctions/bargaining"
+}

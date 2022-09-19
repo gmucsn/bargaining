@@ -1,0 +1,10 @@
+{
+    "error_message": "MES AGENT CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: , Recipients: , Directive: bargaining_open, Content: None>\n\tError Type: <class 'AttributeError'>\n\tError: 'BargAgent' object has no attribute 'cost'\n\n\tTrace Output: \n\t  File \"/mtree/mTree/microeconomic_system/agent.py\", line 306, in receiveMessage\n    directive_handler(self, message)\n\n\t  File \"barg_agent.py\", line 68, in bargaining_open\n\n",
+    "source_message": "<Message Sender: , Recipients: , Directive: bargaining_open, Content: None>",
+    "error_type": "<class 'AttributeError'>",
+    "error": "'BargAgent' object has no attribute 'cost'",
+    "filename": "/mtree/mTree/microeconomic_system/agent.py",
+    "lineno": 306,
+    "name": "receiveMessage",
+    "line": "directive_handler(self, message)"
+}

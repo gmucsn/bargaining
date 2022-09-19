@@ -89,7 +89,7 @@ class BargEnvironment(Environment):
 
         self.set_reminder("shutdown", 5)
 
-        #self.shutdown_mes() #Used for testing
+        self.shutdown_mes() #Used for testing
 
     @directive_decorator("env_end_period")
     def env_end_period(self, message: Message):

@@ -43,7 +43,7 @@ class BargAgent(Agent):
         self.barg_open = False
 
         self.log_message(f'***<A>*** {self.role}: Initialized')
-        self.log_message(f'***<A>*** {self.role}: value/cost {self.value, self.cost}')
+        #self.log_message(f'***<A>*** {self.role}: value/cost {self.value, self.cost}')
 
 
     @directive_decorator("bargaining_open")
@@ -64,7 +64,7 @@ class BargAgent(Agent):
         self.barg_open = True
         
         self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
-        self.log_data(f"value: {self.value}, cost: {self.cost}")
+        #self.log_data(f"value: {self.value}, cost: {self.cost}")
     
     @directive_decorator("make_offer")
     def make_offer(self, message: Message):

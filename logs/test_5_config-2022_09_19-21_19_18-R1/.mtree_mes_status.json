@@ -1,0 +1,10 @@
+{
+    "simulation_id": "1",
+    "simulation_run_id": "test_5_config-2022_09_19-21_19_18",
+    "run_number": 1,
+    "run_code": "3dfe41",
+    "mes_directory": "/auctions/bargaining",
+    "mes_log_directory": "/auctions/bargaining/logs/test_5_config-2022_09_19-21_19_18-R1",
+    "status": "Running",
+    "start_time": null
+}

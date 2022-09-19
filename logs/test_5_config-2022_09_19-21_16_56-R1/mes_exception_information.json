@@ -1,0 +1,10 @@
+{
+    "error_message": "MES INSITUTION CRASHING - EXCEPTION FOLLOWS \n\tSource Message: <Message Sender: barg_agent.BargAgent 1, Recipients: , Directive: bid, Content: {'bid': 433, 'short_name': 'barg_agent.BargAgent 1'}>\n\tError Type: <class 'TypeError'>\n\tError: send_message() takes from 3 to 4 positional arguments but 5 were given\n\n\tTrace Output: \n\t  File \"/mtree/mTree/microeconomic_system/institution.py\", line 182, in receiveMessage\n    directive_handler(self, message)\n\n\t  File \"barg_institution.py\", line 116, in bid\n\n",
+    "source_message": "<Message Sender: barg_agent.BargAgent 1, Recipients: , Directive: bid, Content: {'bid': 433, 'short_name': 'barg_agent.BargAgent 1'}>",
+    "error_type": "<class 'TypeError'>",
+    "error": "send_message() takes from 3 to 4 positional arguments but 5 were given",
+    "filename": "/mtree/mTree/microeconomic_system/institution.py",
+    "lineno": 182,
+    "name": "receiveMessage",
+    "line": "directive_handler(self, message)"
+}
