@@ -15,19 +15,7 @@ import datetime
 @directive_enabled_class
 class BargAgent(Agent):
     """
-    Barg Test Agent class for the Microeconomic System.
-    The Basic Agent class establishes a message framework to interact 
-    with other institutions and accepts different strategies that 
-    can be programmed to engage in varying behavior. 
-    
-    For more details on messages sent and received,
-    see method docstrings. 
-
-    Messages Received: 
-    - init_agents, sent by DAEnvironment
-    - start_exchange, sent by 
-
-    Messages Sent
+    Buyer or Seller agent in bargaining game
     """ 
     def prepare(self):
         self.my_id = int(self.short_name[-1])
@@ -49,18 +37,9 @@ class BargAgent(Agent):
     @directive_decorator("bargaining_open")
     def bargaining_open(self, message: Message):
         """
-        Informs agents that trading has started. 
-
-        Messages Handled :
-        - start_round
-            sender: Institution
-            payload: None
-
-        Messages Sent:
-        - request_standing
-            receiver: Institution
+        Informs agents that bargaining has started. 
         """
-        self.institution_address = message.get_sender()
+        self.log_message("Got to bargaining open", self.short_name)
         self.barg_open = True
         
         self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
