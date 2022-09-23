@@ -75,6 +75,7 @@ class BargEnvironment(Environment):
         """
         self.set_reminder("env_end_period", self.state['period_length'])
         self.send_message("start_bargaining", "barg_institution.BargInstitution")
+        self.contract_flag = False
 
 
     @directive_decorator("contract")
@@ -84,6 +85,7 @@ class BargEnvironment(Environment):
         payload: (buyer, seller, price)
         """
         self.state['contract'] = message.get_payload()
+        self.contract_flag = True
         self.log_message(f"... <E> ... Contract received: {self.state['contract']}")
         self.send_message("end_bargaining", "barg_institution.BargInstitution")
 
@@ -97,7 +99,7 @@ class BargEnvironment(Environment):
         Receives reminder to end_period. Sends end_bargaining to Institution
         """
         self.log_message(".... <E> ... Ending Bargaining")
-        self.log_data("no contract")
+        if not self.contract_flag: self.log_data("no contract")
         self.send_message("end_bargaining", "barg_institution.BargInstitution")
 
         self.set_reminder("shutdown", 5)
