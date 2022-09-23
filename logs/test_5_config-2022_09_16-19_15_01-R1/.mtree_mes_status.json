@@ -1,0 +1,12 @@
+{
+    "simulation_id": "1",
+    "simulation_run_id": "test_5_config-2022_09_16-19_15_01",
+    "run_number": 1,
+    "run_code": "fa21e8",
+    "mes_directory": "/auctions",
+    "mes_log_directory": "/auctions/logs/test_5_config-2022_09_16-19_15_01-R1",
+    "status": "Finished",
+    "start_time": "2022-09-16 19:15:01.698701",
+    "end_time": "2022-09-16 19:15:01.968490",
+    "total_time": "0:00:00.269789"
+}
