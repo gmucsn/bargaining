@@ -29,7 +29,7 @@
         "escrow": 0
     },
     "data_logging": false,
-    "source_hash": "8ce4c2c539da829595607c30b82a0b4b",
-    "simulation_run_id": "test_5_config-2022_09_16-18_57_13",
-    "mes_directory": "/auctions"
+    "source_hash": "ca7c54664d648b846a47c28a1d80bd00",
+    "simulation_run_id": "test_5_config-2022_09_23-20_40_42",
+    "mes_directory": "/auctions/bargaining"
 }
