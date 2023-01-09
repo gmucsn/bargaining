@@ -1,0 +1,11 @@
+{
+    "simulation_id": "1",
+    "simulation_run_id": "test_5_config-2023_01_09-22_08_10",
+    "run_number": 1,
+    "run_code": "fd696b",
+    "mes_directory": "/auctions/bargaining",
+    "mes_log_directory": "/auctions/bargaining/logs/test_5_config-2023_01_09-22_08_10-R1",
+    "status": "Exception!",
+    "start_time": "2023-01-09 22:08:10.326778",
+    "end_time": "2023-01-09 22:08:10.420304"
+}

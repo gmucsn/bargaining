@@ -74,7 +74,7 @@ class BargEnvironment(Environment):
 
         """
         self.set_reminder("env_end_period", self.state['period_length'])
-        self.send_message("start_bargaining", "barg_institution.BargInstitution")
+        self.send_message("start_bargaining", "barg_institution")
         self.contract_flag = False
 
 

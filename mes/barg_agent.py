@@ -39,16 +39,14 @@ class BargAgent(Agent):
         """
         Informs agents that bargaining has started. 
         """
-        self.log_message("Got to bargaining open", self.short_name)
-        self.barg_open = True
-        
-        self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
+        self.barg_open = True       
+        self.send_message("request_standing", "barg_institution", self.short_name)
         #self.log_data(f"value: {self.value}, cost: {self.cost}")
     
     @directive_decorator("make_offer")
     def make_offer(self, message: Message):
         if self.barg_open:
-            self.send_message("request_standing", "barg_institution.BargInstitution", self.short_name)
+            self.send_message("request_standing", "barg_institution", self.short_name)
 
     def wait_offer(self):
         """
@@ -103,7 +101,7 @@ class BargAgent(Agent):
         bid = random.randint(10, self.value)
         payload = {'bid': bid, 'short_name': self.short_name}
         self.log_message(f'Agent {self.role}: Made bid {bid}: Payload = {payload}')
-        self.send_message("bid", "barg_institution.BargInstitution", payload)
+        self.send_message("bid", "barg_institution", payload)
         self.wait_offer()
 
  
@@ -123,7 +121,7 @@ class BargAgent(Agent):
         ask = random.randint(self.cost, 990)
         payload = {'ask': ask, 'short_name': self.short_name}
         self.log_message(f'Agent {self.role}: Made ask {ask}: Payload = {payload}')
-        self.send_message("ask", "barg_institution.BargInstitution", payload)
+        self.send_message("ask", "barg_institution", payload)
         self.wait_offer()
 
 
