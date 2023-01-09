@@ -1,3 +1,0 @@
-1663683939.7077508	"id = barg_agent.BargAgent 1, bid = 354"
-1663683939.709236	"id = barg_agent.BargAgent 2, ask = 346"
-1663683939.709408	"contract = ('barg_agent.BargAgent 1', 'barg_agent.BargAgent 2', 354)"

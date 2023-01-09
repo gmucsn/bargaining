@@ -1,0 +1,4 @@
+1663965643.1410534	"id = barg_agent.BargAgent 2, ask = 740"
+1663965643.178974	"id = barg_agent.BargAgent 1, bid = 611"
+1663965647.241424	"id = barg_agent.BargAgent 2, ask = 472"
+1663965647.2477076	"contract = ('barg_agent.BargAgent 1', 'barg_agent.BargAgent 2', 611)"
