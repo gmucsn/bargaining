@@ -1,0 +1,12 @@
+{
+    "simulation_id": "1",
+    "simulation_run_id": "test_5_config-2023_01_10-21_02_51",
+    "run_number": 1,
+    "run_code": "a957a2",
+    "mes_directory": "/auctions/bargaining",
+    "mes_log_directory": "/auctions/bargaining/logs/test_5_config-2023_01_10-21_02_51-R1",
+    "status": "Finished",
+    "start_time": "2023-01-10 21:02:51.517596",
+    "end_time": "2023-01-10 21:03:08.751975",
+    "total_time": "0:00:17.234379"
+}

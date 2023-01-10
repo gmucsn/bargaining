@@ -1,15 +1,23 @@
+Title: Two Person Bargaining
+mTree_runner -> Environment: start_experiment
+Note right of mTree_runner: None
+Environment -> Environment: env_end_period
+Note right of Environment: time_in_seconds
 Environment -> Institution: start_bargaining
-Note right of Environment: agent_address_book
-Institution -> Agent: bargaining_open
-Agent-> Agent: wait_to_make_offer
+Note right of Environment: None
+Institution -> Agent:bargaining_open
+Note right of Institution: None
+Agent -> Agent: make_offer
+Note right of Agent: time_in_seconds
 Agent -> Institution: request_standing
-Institution -> Agent: standing
-Note right of Institution: standing_bid, \n standing_ask
-Agent -> Institution: bid or ask
-Note left of Agent: {bid|ask},\n short_name
+Note left of Agent: short_name
+Institution -> Agent:standing
+Note right of Institution: standing_bid, standing_ask
+Agent -> Institution: bid
+Note left of Agent: short_name, integer
+Agent -> Institution: ask
+Note left of Agent: short_name, integer
 Institution -> Environment: contract
-Note left of Institution: contract
-Environment->Environment: shutdown
-Environment->Institution: stop_bargaining
+Note left of Institution:buyer_id, seller_id, price
 
 

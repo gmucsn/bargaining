@@ -87,7 +87,7 @@ class BargEnvironment(Environment):
         self.state['contract'] = message.get_payload()
         self.contract_flag = True
         self.log_message(f"... <E> ... Contract received: {self.state['contract']}")
-        self.send_message("end_bargaining", "barg_institution.BargInstitution")
+        self.send_message("end_bargaining", "barg_institution")
 
         self.set_reminder("shutdown", 5)
 

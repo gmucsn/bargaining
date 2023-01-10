@@ -7,7 +7,7 @@
     "institutions": [
         {
             "institution_class": "barg_institution.BargInstitution",
-            "short_name": "barg_institution"
+                "short_name": "barg_institution"
         }
     ],
     "number_of_runs": 1,
@@ -23,16 +23,14 @@
         "cost": 300,
         "starting_bid": 0,
         "starting_ask": 1000,
-        "period_length": 15,
+        "period_length": 30,
         "offer_wait_time": 3,
         "number_of_rounds": 1,
         "number_of_agents": 2,
         "escrow": 0
     },
     "data_logging": false,
-    "debug": null,
-    "log_level": null,
-    "source_hash": "16e3ae12b209b4d8229aca17778f577a",
-    "simulation_run_id": "test_5_config-2023_01_09-22_39_27",
+    "source_hash": "83eb8062d0a286226a3a4f5633426f41",
+    "simulation_run_id": "basic_config-2022_08_24-20_36_34",
     "mes_directory": "/auctions/bargaining"
 }

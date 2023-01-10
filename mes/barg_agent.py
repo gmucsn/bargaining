@@ -43,6 +43,14 @@ class BargAgent(Agent):
         self.send_message("request_standing", "barg_institution", self.short_name)
         #self.log_data(f"value: {self.value}, cost: {self.cost}")
     
+    
+    @directive_decorator("make_offer")
+    def make_offer(self, message: Message):
+        """
+        Informs agents that bargaining has started. 
+        """      
+        self.send_message("request_standing", "barg_institution", self.short_name)
+
 
     def wait_offer(self):
         """

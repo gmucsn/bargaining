@@ -23,7 +23,7 @@
         "cost": 300,
         "starting_bid": 0,
         "starting_ask": 1000,
-        "period_length": 15,
+        "period_length": 30,
         "offer_wait_time": 3,
         "number_of_rounds": 1,
         "number_of_agents": 2,
@@ -32,7 +32,7 @@
     "data_logging": false,
     "debug": null,
     "log_level": null,
-    "source_hash": "87c8601633cc9b35f07481f50eba2480",
-    "simulation_run_id": "test_5_config-2023_01_09-22_08_10",
+    "source_hash": "c5eab392483351a043f8d2171e273f08",
+    "simulation_run_id": "test_5_config-2023_01_10-21_02_51",
     "mes_directory": "/auctions/bargaining"
 }

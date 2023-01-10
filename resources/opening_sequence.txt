@@ -1,8 +1,0 @@
-Runner->Environment: start_experiment
-Environment -> Environment: end_period
-Environment -> Institution: init_institution
-Note right of Environment: starting_bid, \n starting_ask
-Institution -> Environment: agent_confirm_init
-Environment -> Agent: init_agent
-Note right of Environment: agent_sn, \n agent_role \n {cost|value}
-Agent -> Environment: agent_confirm_init
